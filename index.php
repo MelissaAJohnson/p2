@@ -45,11 +45,12 @@
 	<body>
 
 		<div class = "container-fluid">
-			<h1 style="text-align:center">XKCD Password Generator - NFL Edition</h1><br />
+			<h1 style="text-align:center">XKCD Password Generator</h1>
+			<h2 style="text-align:center; color:purple">MN Vikings Edition</h2><br>
 			<p>
 				In it's <a href="https://xkcd.com/936/" target="_blank">comic</a>, XKCD claims, 'through 20 years of effort, we've successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.' The comic suggests that stringing together a series of random words makes a stronger, more memorable password than an obscure password.
 			</p>
-			<p> This page makes generating your 'XKCD-compliant' password easier by creating one for you based on the parameters you select. And because this site was created during Sunday football, it includes NFL terms - making it fun for fans to enjoy the passwords they create.</p>
+			<p> This page makes generating your 'XKCD-compliant' password easier by creating one for you based on the parameters you select. And because this site was created during Sunday football and MN won, it includes NFL words - making it fun for fans to enjoy the passwords they create.</p>
 
 			<hr>
 			
