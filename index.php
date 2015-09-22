@@ -45,7 +45,7 @@
 	<body>
 
 		<div class = "container-fluid">
-			<h1>XKCD Password Generator - NFL Edition</h1><br />
+			<h1 style="text-align:center">XKCD Password Generator - NFL Edition</h1><br />
 			<p>
 				In it's <a href="https://xkcd.com/936/" target="_blank">comic</a>, XKCD claims, 'through 20 years of effort, we've successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.' The comic suggests that stringing together a series of random words makes a stronger, more memorable password than an obscure password.
 			</p>
@@ -58,17 +58,19 @@
 			<!-- 1. collect rules behind password generator -->
 			
 			<form action = "" method="post" style="text-align: center">
+				<input type="hidden" name="act" value="run">
 				How many words to include?
 				<select name="words" id="words">
-					<option>2</option>
-					<option>3</option>
-					<option>4</option>
-					<option>5</option>
-					<option>6</option>
-					<option>7</option>
-					<option>8</option>
-					<option>9</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
 				</select>
+
 				<br /><br />
 				<input type="checkbox" name="number" > Append a number?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
 				<input type="checkbox" name="character"> Append a special character?<br /><br />
@@ -77,10 +79,15 @@
 
 		
 			<?php
-				# 2. Grab number of words to include from form
+				# Don't print password until button pressed
+				if (empty($_POST["act"])) {
+					$password="";
+				} else {
+				
+					# 2. Grab number of words to include from form
 					$count = $_POST["words"];
 
-				# 3. Build password by adding to the string per number of words specified
+					# 3. Build password by adding to the string per number of words specified
 					$i = 0;
 					while ($i<$count-1) {
 						$r = rand(0,8); 
@@ -92,20 +99,21 @@
 					$password = $password.$random_words[$r];
 					# (debug) echo "Password is ".$password;
 
-				# 4. add number to string if boolean is true				
+					# 4. add number to string if boolean is true				
 					if($_POST["number"]) {
 						$random = rand(0,8);
 						$password = $password."-".$random;
 					}
 
-				# 5. add special character to string if boolean is true 
+					# 5. add special character to string if boolean is true 
 					if($_POST["character"]) {
 						$char_rand = rand(0,3);
 						$password = $password."-".$characters[$char_rand];
 					}
+				}
 			?>
 		 
-			<p style="font-family:courier; font-size:160%; color:blue; text-align:center">
+			<p style="font-family:courier; font-size:160%; color:purple; text-align:center" class="bg-warning">
 				<?php echo " ".$password;?>
 			</p>
 		</div>

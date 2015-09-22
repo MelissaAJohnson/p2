@@ -7,8 +7,8 @@ This project is a XKCD Password Generator that generates a password by randomly 
 + specify whether the password will contain a character
 + specify whether the password will contain a number
 
-** Live site **: [p2.mjproductions.biz](http://p2.mjproductions.biz)
+**Live site**: [p2.mjproductions.biz](http://p2.mjproductions.biz)
 
-** Screencast demo **:
+**Screencast demo**:
 
 This project leverages the bootstrap framework.
