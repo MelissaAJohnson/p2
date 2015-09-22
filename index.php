@@ -43,10 +43,21 @@
 		?>
 	</head>
 	<body>
+
 		<div class = "container-fluid">
-			<h1>XKCD Password Generator</h1><br />
+			<h1>XKCD Password Generator - NFL Edition</h1><br />
+			<p>
+				In it's <a href="https://xkcd.com/936/" target="_blank">comic</a>, XKCD claims, 'through 20 years of effort, we've successfully trained everyone to use passwords that are hard for humans to remember, but easy for computers to guess.' The comic suggests that stringing together a series of random words makes a stronger, more memorable password than an obscure password.
+			</p>
+			<p> This page makes generating your 'XKCD-compliant' password easier by creating one for you based on the parameters you select. And because this site was created during Sunday football, it includes NFL terms - making it fun for fans to enjoy the passwords they create.</p>
+
+			<hr>
+			
+			<h2 style="text-align:center">Create Your Password</h2>
+
 			<!-- 1. collect rules behind password generator -->
-			<form action = "" method="post">
+			
+			<form action = "" method="post" style="text-align: center">
 				How many words to include?
 				<select name="words" id="words">
 					<option>2</option>
@@ -59,11 +70,10 @@
 					<option>9</option>
 				</select>
 				<br /><br />
-				<input type="checkbox" name="number" > Append a number?<br /><br />
+				<input type="checkbox" name="number" > Append a number?&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
 				<input type="checkbox" name="character"> Append a special character?<br /><br />
 				<input type='submit' value='Generate password'><br>
 			</form><br />
-
 
 		
 			<?php
