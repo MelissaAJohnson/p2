@@ -40,7 +40,8 @@
 			);
 
 			$password = "";
-		?>
+			?>
+
 	</head>
 	<body>
 
@@ -51,10 +52,12 @@
   				}
   			</style>
   			<div class = "row" id="full-page">
-  				<br><br>
+  				<br><p style="padding-left:25px"></p><br>
   				<div class = "row" id="page_background">
   					<div class="col-md-1" style="background-color:#ededfa border-color:#ededfa"></div>
-  					<div class="col-md-10" style="background-color:#ededfa; border-radius:5px">
+  					<div class="col-md-10" style="background-color:#ededfa">
+  						<br>
+  						<a href="http://mjproductions.biz">Return to project page</a><br>
 						<h1 style="text-align:center">XKCD Password Generator</h1>
 						<h2 style="text-align:center; color:#5c57b3">MN Vikings Edition</h2><br>
 						<p>
@@ -68,7 +71,8 @@
 
 				<div class = "row" id="password_generate">
 					<div class="col-md-1" style="background-color:#ededfa border-color:#ededfa"></div>
-					<div class="col-md-10" style="background-color:#FFFFFF; border-radius:5px">
+					
+					<div class="col-md-10" style="background-color:#ffffff">
 			
 						<h2 style="text-align:center">Create Your Password</h2>
 
@@ -131,12 +135,20 @@
 
 						?>
 
-		 
 						<p style="font-family:courier; font-size:160%; color:#5c57b3; text-align:center" class="bg-warning">
 						<?php echo " ".$password;?>
-						</p>
+						</p><br>
 					</div>
 				</div>
+        		<div class = "row">
+          			<div class="col-md-1"></div>
+          			<div class="col-md-10" style="background-color:#ededfa">
+            			<br />
+            			<center>Copyright 2015 MJ Productions, Inc | Contact me melissajohnson at g.harvard.edu</center>
+            			<br />
+          			</div>
+        		</div>
+        		<br><br>
 			</div>
 		</div>
 	</body>
