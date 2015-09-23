@@ -9,6 +9,6 @@ This project is a XKCD Password Generator that generates a password by randomly 
 
 **Live site**: [p2.mjproductions.biz](http://p2.mjproductions.biz)
 
-**Screencast demo**: [MJohnson DWA P2](https://youtu.be/BOKhkuqsxGE)
+**Screencast demo**: [MJohnson DWA P2](https://youtu.be/VqGXPmXj9p8)
 
 This project leverages the bootstrap framework.
