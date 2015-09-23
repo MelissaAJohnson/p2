@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
  	<head>
+ 		<meta charset="UTF-8">
  		<title>XKCD Password</title>
     	
     	<!-- Latest compiled and minified CSS -->
@@ -46,7 +47,7 @@
 	<body>
 
 		<div class = "container-fluid">
-			<style type="text/css">
+			<style scoped type="text/css">
   				body{
   				background-color:#5c57b3;
   				}
@@ -78,7 +79,7 @@
 
 						<!-- 1. collect rules behind password generator -->
 			
-						<form action = "" method="post" style="text-align: center">
+						<form method="post" style="text-align: center">
 							<input type="hidden" name="act" value="run">
 							How many words to include?
 							<select name="words" id="words">
@@ -142,10 +143,10 @@
 				</div>
         		<div class = "row">
           			<div class="col-md-1"></div>
-          			<div class="col-md-10" style="background-color:#ededfa">
+          			<div class="col-md-10" style="background-color:#ededfa; text-align:center">
             			<br />
-            			<center>Copyright 2015 MJ Productions, Inc | Contact me melissajohnson at g.harvard.edu</center>
-            			<br />
+            			Copyright 2015 MJ Productions, Inc | Contact me melissajohnson at g.harvard.edu
+            			<br /><br />
           			</div>
         		</div>
         		<br><br>
