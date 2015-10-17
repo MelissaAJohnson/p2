@@ -49,7 +49,7 @@
 		<div class = "container-fluid">
 			<style scoped type="text/css">
   				body{
-  				background-color:#5c57b3;
+  				background-color:#ededfa;
   				}
   			</style>
   			<div class = "row" id="full-page">
